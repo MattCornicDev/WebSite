@@ -104,6 +104,11 @@ button:active{
     left: 70%;
     transform: translate(-70%);
 }
+.html{
+    font-size: 30px;
+    
+}
+
 .about-container{
     width: 80%;
     height: 330px;
@@ -126,7 +131,7 @@ button:active{
     color: #403e3e;
     font-family: myriad pro;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 0px;
 }
 .about-text p:nth-child(2){
@@ -136,8 +141,26 @@ button:active{
     font-weight: bold;
     line-height: 5px;
 }
-.about-text p:nth-child(3),
 .about-text p:nth-child(4){
+    color: #3e3d3d;
+    font-family: myriad-pro;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 5px;
+
+}
+.about-text p:nth-child(6){
+    color: #3e3d3d;
+    font-family: myriad-pro;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 5px;
+}
+.about-text p:nth-child(3),
+
+.about-text p:nth-child(5),
+
+.about-text p:nth-child(7){
     color: #7e7d7d;
     font-family: calibri;
     font-size: 16px;
@@ -326,7 +349,8 @@ footer p:nth-child(2){
     position: absolut;
     left:50%;
     bottom: 10px;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
 }
 .social-icons i {
     color: #000000;
