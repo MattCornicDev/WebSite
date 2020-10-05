@@ -1,3 +1,4 @@
+@import "bourbon";
 body{
     background-color: #f6f5f5;
     margin:0px;
@@ -22,7 +23,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: #fff;
+    background-color: #b8b5b1;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     padding: 0px 5%;
 }
@@ -84,6 +85,77 @@ nav ul li a {
     outline: none;
     margin: 0px 10px;
 }
+.nuage-de-mots{
+    font-size: 70px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.nuage-de-mots p:nth-child(1){
+    position: relative;
+    font-size: 70px;
+    color: hsl(53, 71%, 51%);
+    right: 50px;
+    top: 200px;
+}
+.nuage-de-mots p:nth-child(2){
+    position: relative;
+    font-size: 70px;
+    transform: rotate(90deg);
+    top: 245px;
+    right: 20px;
+}
+.nuage-de-mots p:nth-child(3){
+    position: relative;
+    font-size: 60px;
+    color: #85B06B;
+    right: 130px;
+}
+.nuage-de-mots p:nth-child(4){
+    position: absolute;
+    font-size: 50px;
+    color: #7477AA;
+    top: 250px;
+    right: 340px;
+    transform: rotate(90deg);
+}
+.nuage-de-mots p:nth-child(5){
+    position: absolute;
+    color: #E4563B;
+    top: 360px;
+    right: 350px;
+}
+.nuage-de-mots p:nth-child(6) span{
+    position: absolute;
+    color: #285F86;
+    right: 135px;
+}
+.nuage-de-mots p:nth-child(6){
+    position: absolute;
+    color: #D89233;
+    right: 200px;
+}
+.nuage-de-mots p:nth-child(7){
+    position: absolute;
+    color: #304CDC;
+    top: 400px;
+    right: 200px;
+}
+.nuage-de-mots p:nth-child(8){
+    position: absolute;
+    color: #523E78;
+    top: 430px;
+    right: 340px;
+}
+.nuage-de-mots p:nth-child(9){
+    position: absolute;
+    color: #E06D3B;
+    top: 250px;
+    right: 370px;
+    transform: rotate(90deg);
+    font-size: 60px;
+
+}
 .hire-btn{
     border: 2px solid #373636;
     color: #373636;
@@ -104,10 +176,17 @@ button:active{
     left: 70%;
     transform: translate(-70%);
 }
-.html{
-    font-size: 30px;
-    
+.glow{
+  
+  font-family: 'Arvo', serif;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 100px;
+  color: orange;
+  margin: 20px;
+  
 }
+
 
 .about-container{
     width: 80%;
@@ -165,14 +244,17 @@ button:active{
     font-family: calibri;
     font-size: 16px;
 }
+
 .about-text button{
     width: 120px;
     height: 40px;
-    color: #FFFFFF;
+    color: #000000;
     outline: none;
     border: none;
     font-family: calibri;
     border-color: #262525;
+    background-color: orange;
+    font-size: 13px;
 }
 .services{
     height: 600px;
@@ -203,7 +285,7 @@ button:active{
 
 }
 .box-1, .box-2, .box-3{
-    width: 300px;
+    width: 250px;
     height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,6 +298,16 @@ button:active{
 .box-container{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    
+}
+.box-container i {
+    font-size: 30px;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    position: absolute;
 }
 
 .box-1{
@@ -223,6 +315,7 @@ button:active{
     /* background-color: #ABABAB; */
 
 }
+
 .box-2{
      background-image: url("/image/services-2.png");
     /* background-color: #ABABAB; */
@@ -276,12 +369,14 @@ button:active{
 .box-3 button{
     width: 100px;
     height: 30px;
-    background-color: #fff;
+    background-color: orange;
     border: none;
     outline: none;
     border-radius: 5px;
+    position: absolute;
+    bottom: 35px;
 }
-.contact-me{
+.contactez-moi{
     width: 100%;
     height: 280px;
     background-image: url("/image/project\ in\ your\ mind.png");
@@ -292,17 +387,17 @@ button:active{
     justify-content: center;
     align-items: center;
 }
-.contact-me p {
+.contactez-moi p {
     color: #FFFFFF;
     font-size: 30px;
     font-family: calibri;
     font-weight: bold;
     border-bottom: 2px solid #FFFFFF;
 }
-.contact-me button{
+.contactez-moi button{
     width: 200px;
     height: 40px;
-    background-color: #fff;
+    background-color: orange;
     outline: none;
     border: none;
     font-size: 14px;
@@ -339,9 +434,11 @@ footer p:nth-child(2){
     background-color: #e6e3e3;
     margin:20px 10px;
     border-radius: 50%;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
-.social-icons{
+.social-icons ul{
     display: flex;
+
 }
 .copyright {
     color: #565555;
@@ -355,17 +452,48 @@ footer p:nth-child(2){
 .social-icons i {
     color: #000000;
 }
-.social-icons a:hover,
-.a-social-b a:hover{
-    background-color: #000000;
+.social-icons ul li:nth-child(1) a:hover,
+.a-social-b ul li:nth-child(1) a:hover{
     box-shadow: 2px 2px 12px rbba(0,0,0,0.2);
-    transition: all ease 0.5s;
+    transition: all ease 0.4s;
+    transform: translate(0, -5px);
+    background-color: #3b5999;
 }
+.social-icons ul li:nth-child(2) a:hover,
+.a-social-b ul li:nth-child(2) a:hover{
+    box-shadow: 2px 2px 12px rbba(0,0,0,0.2);
+    transition: all ease 0.4s;
+    transform: translate(0, -5px);
+    background-color: #55acee;
+}
+.social-icons ul li:nth-child(3) a:hover,
+.a-social-b ul li:nth-child(3) a:hover{
+    box-shadow: 2px 2px 12px rbba(0,0,0,0.2);
+    transition: all ease 0.4s;
+    transform: translate(0, -5px);
+    background-color: #e4405f;
+}
+.social-icons ul li:nth-child(4) a:hover,
+.a-social-b ul li:nth-child(4) a:hover{
+    box-shadow: 2px 2px 12px rbba(0,0,0,0.2);
+    transition: all ease 0.4s;
+    transform: translate(0, -5px);
+    background-color: #cd201f;
+}
+.social-icons ul li:nth-child(5) a:hover,
+.a-social-b ul li:nth-child(5) a:hover{
+    box-shadow: 2px 2px 12px rbba(0,0,0,0.2);
+    transition: all ease 0.4s;
+    transform: translate(0, -5px);
+    background-color: #0077B5;
+}
+
 .social-icons a:hover i,
 .a-social-b a:hover i{
     color: #FFFFFF;
     transition: all ease 0.5s;
 }
+
 .a-social-b{
     position: fixed;
     top: 50%;
