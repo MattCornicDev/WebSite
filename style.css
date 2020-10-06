@@ -17,7 +17,10 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -51,6 +54,7 @@ nav ul li a {
     font-weight: bold;
     color: #6d6d6d;
     font-size:22px;
+    
 }
 .text-container p:nth-child(2){
     font-family: calibri;
@@ -58,6 +62,8 @@ nav ul li a {
     letter-spacing: 1px;
     color: #1a1a1a;
     font-size: 60px;
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.4),
+             -1px -2px 0 rgba(255,255,255,1);
 }
 .text-container p:nth-child(3){
     font-family: myriad pro regular;
@@ -193,7 +199,7 @@ button:active{
     height: 330px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 22px 22px 12px rgba(0, 0, 0, 0.5);
     display: flex;
     margin: -7% auto 20px auto;
     position: relative;
@@ -289,7 +295,7 @@ button:active{
     height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 22px 22px 12px rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -409,6 +415,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.3);
+
 }
 footer p{
     font-family: calibri;
@@ -448,6 +456,7 @@ footer p:nth-child(2){
     bottom: 10px;
     display: flex;
     justify-content: center;
+
 }
 .social-icons i {
     color: #000000;
