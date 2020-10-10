@@ -46,25 +46,28 @@ h6{
 
 h1,h2,h3,h4,h5,h6{
     font-family:"Segoe UI",Arial,sans-serif;
-    font-weight:400;margin:10px 0
+    font-weight:400;
+    margin:10px 0;
 }
 .w3-wide{
     letter-spacing:4px
 }
 hr{
-    border:0;border-top:1px solid #eee;margin:20px 0
+    border:0;
+    border-top:1px solid #eee;
+    margin:20px 0;
 }
 a{
     color:inherit
 }
 
 
-.w3-container:after,
-.w3-container:before,
+.container:after,
+.container:before,
 .w3-row:after,
 .w3-row:before,
-.w3-row-padding:after,
-.w3-row-padding:before,
+.row-padding:after,
+.row-padding:before,
 .w3-bar:before,
 .w3-bar:after{
     content:"";
@@ -112,7 +115,7 @@ a{
 .w3-col.l5{width:41.66666%}.w3-col.l6{width:49.99999%}.w3-col.l7{width:58.33333%}.w3-col.l8{width:66.66666%}
 .w3-col.l9{width:74.99999%}.w3-col.l10{width:83.33333%}.w3-col.l11{width:91.66666%}.w3-col.l12{width:99.99999%}}
 .w3-rest{overflow:hidden}.w3-stretch{margin-left:-16px;margin-right:-16px}
-.w3-content,.w3-auto{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}.w3-auto{max-width:1140px}
+.content,.w3-auto{margin-left:auto;margin-right:auto}.content{max-width:980px}.w3-auto{max-width:1140px}
 .w3-cell-row{display:table;width:100%}.w3-cell{display:table-cell}
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
@@ -126,22 +129,22 @@ a{
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 
-.w3-row-padding,
-.w3-row-padding
+.row-padding,
+.row-padding
 .w3-half,
-.w3-row-padding,
+.row-padding,
 .w3-third,
-.w3-row-padding,
+.row-padding,
 .w3-twothird,
-.w3-row-padding,
+.row-padding,
 .w3-threequarter,
-.w3-row-padding,
+.row-padding,
 .w3-quarter,
-.w3-row-padding,
+.row-padding,
 .w3-col{
     padding:0 8px
 }
-.w3-container,
+.container,
 .w3-panel{
     padding:0.01em 16px
 }
@@ -163,22 +166,22 @@ a{
 .w3-justify{
     text-align:justify!important
 }
-.w3-center{
+.center{
     text-align:center!important
 }
 .w3-margin{
     margin:16px!important
 }
-.w3-margin-top{
+.margin-top{
     margin-top:16px!important
 }
-.w3-margin-bottom{
+.margin-bottom{
     margin-bottom:16px!important
 }
 .w3-margin-left{
     margin-left:16px!important
 }
-.w3-margin-right{
+.margin-right{
     margin-right:16px!important
 }
 .w3-padding-small{
@@ -196,24 +199,24 @@ a{
 }
 
 /* Colors */
-.w3-teal,
+.teal,
 .w3-hover-teal:hover{
     color:#fff!important;
-    background-color:#009688!important
+    background-color: #0a0a3f!important;
 }
-.w3-white,
+.white,
 .w3-hover-white:hover{
     color:#000!important;
     background-color:#fff!important
 }
-.w3-light-grey,
+.light-grey,
 .w3-hover-light-grey:hover,
 .w3-light-gray,
 .w3-hover-light-gray:hover{
     color:#000!important;
     background-color:#f1f1f1!important
 }
-.w3-text-teal,
+.text-teal,
 .w3-hover-text-teal:hover{
     color:#009688!important
 }
